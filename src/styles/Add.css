@@ -1,0 +1,37 @@
+.add-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+    width: 750px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(237, 231, 231);
+    border-radius: 8px;   
+}
+
+.todo {
+    width: 300px;
+    height: 35px;
+    border: none;
+    margin-right: 10px;
+
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #44A194;
+    border: none;
+    color: azure;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #379689;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.current-date {
+    color: rgb(112, 117, 117);
+}
