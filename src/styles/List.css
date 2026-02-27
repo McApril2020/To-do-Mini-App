@@ -1,6 +1,11 @@
+.action {
+    display: flex;
+}
+
 .list-container {
     margin-top: 20px;
-    width: 700px;       /* keep the fixed width */
+    width: 90%;
+    max-width: 700px;   /* keeps desktop layout nice */
     margin-left: auto;
     margin-right: auto;
 }
@@ -30,14 +35,40 @@
 }
 
 .btn-action {
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
     border: none;
     background-color: rgb(237, 231, 231);
     cursor: pointer;
-    margin-left: 5px;
-
 }
 
 .content-details {
     color: rgb(97, 100, 100);
+}
+
+@media (max-width: 600px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; 
+    }
+
+    .action {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+    .content-details {
+        flex: 1;               /* take remaining space */
+        margin-right: 10px;
+        word-break: break-word;
+    }
+
+    .btn-action {
+        padding: 8px;
+    }
 }
